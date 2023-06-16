@@ -8,7 +8,9 @@
 */
 int main(void)
 {
-	for (int AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
+	int AtoZ;
+
+	for (AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
 	{
 		putchar(tolower(AtoZ));
 	}

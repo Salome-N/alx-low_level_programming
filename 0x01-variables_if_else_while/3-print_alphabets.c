@@ -9,11 +9,13 @@
 */
 int main(void)
 {
-	for (int AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
+	int AtoZ;
+
+	for (AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
 	{
 		putchar(tolower(AtoZ));
 	}
-	for (int AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
+	for (AtoZ = 'A'; AtoZ <= 'Z'; AtoZ++)
 	{
 		putchar(AtoZ);
 	}

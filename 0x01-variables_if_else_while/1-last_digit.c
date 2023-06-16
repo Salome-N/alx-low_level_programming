@@ -19,7 +19,9 @@ int main(void)
 	* and compare if it is greater than 5/equal to 0/less than 6 and not 0
 	* @l - holds the last digit of n
 	*/
-	int l = n % 10;
+	int l;
+
+	l = n % 10;
 
 	if (l == 0)
 		printf("Last digit of %d is %d and is 0\n", n, l);
