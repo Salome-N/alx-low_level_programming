@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* time_table - shows the table of multiplications of nine
+* times_table - shows the table of multiplications of nine
 * Return: alwways 0
 */
 void times_table(void)
