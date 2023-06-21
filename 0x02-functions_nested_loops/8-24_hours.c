@@ -1,13 +1,6 @@
 #include "main.h"
 /**
 * jack_bauer - print 24 hour
-*
-* Description: print out the 24 hour clock
-* @a: holds the hour side
-* @b: holds the hour side
-* @c: holds the minute side
-* @d: holds the minute side
-*
 * Return: always 0
 */
 void jack_bauer(void)
