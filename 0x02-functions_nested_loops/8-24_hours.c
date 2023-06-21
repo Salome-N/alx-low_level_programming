@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * jack_bauer - print 24 hour
 * Description: print out the 24 hour clock
