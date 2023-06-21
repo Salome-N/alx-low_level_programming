@@ -3,7 +3,7 @@
 * _abs - checks the absolute value of a number
 * @i: holds the value being checked
 * @i_val: holds the negative sign value
-* Return: i if the value is more than zero,i_val else otherwise 
+* Return: i if the value is more than zero,i_val else otherwise
 */
 int _abs(int i)
 {
