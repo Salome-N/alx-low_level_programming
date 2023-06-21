@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * jack_bauer - print 24 hour
+* Description: print out the 24 hour clock
 * @a: holds the hour side
 * @b: holds the hour side
 * @c: holds the minute side
