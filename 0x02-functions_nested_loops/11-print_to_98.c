@@ -13,6 +13,8 @@ void print_to_98(int n)
 		a = (n - b) / 10;
 		while (n > 98)
 		{
+			b = n % 10;
+			a = (n - b) / 10;
 			_putchar(a + '0');
 			_putchar(b + '0');
  			_putchar(44);
@@ -27,6 +29,8 @@ void print_to_98(int n)
 	{
 		while (n < 98)
 		{
+			b = n % 10;
+			a = (n - b) / 10;
 			_putchar(a + '0');
 			_putchar(b + '0');
 			_putchar(44);
