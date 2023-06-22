@@ -2,13 +2,13 @@
 
 /**
 * _isupper - returns value if it is uppercase or otherwise
-* @c - holds value
+* @l - holds value
 * Return: 1 if uppercase 0 if otherwise
 */
 
-int _isupper(int c)
+int _isupper(int l)
 {
-	if (c >= 65 && c <= 90)
+	if (l >= 65 && l <= 90)
 	{
 		return (1);
 	}
