@@ -5,40 +5,22 @@
 */
 void print_to_98(int n)
 {
-	int a, b;
-
 	if (n >= 98)
 	{
-		b = n % 10;
-		a = (n - b) / 10;
 		while (n > 98)
 		{
-			b = n % 10;
-			a = (n - b) / 10;
-			_putchar(a + '0');
-			_putchar(b + '0');
- 			_putchar(44);
-			_putchar(32);
+			printf("%d, ", n);
 			n --;
 		}
-		_putchar(a + '0');
-		_putchar(b + '0');
-		_putchar('\n');
+		printf("%d\n", n);
 	}
 	else
 	{
 		while (n < 98)
 		{
-			b = n % 10;
-			a = (n - b) / 10;
-			_putchar(a + '0');
-			_putchar(b + '0');
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", n);
 			n ++;
 		}
-		_putchar(a + '0');
-		_putchar(b + '0');
-		_putchar('\n');
+		printf("%d\n", n);
 	}
 }
