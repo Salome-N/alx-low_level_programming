@@ -1,4 +1,5 @@
 #include "main.h"
+#include <dtdio.h>
 /**
 * print_to_98 - prints numbers up to 98 depending on the first digit
 * Return: always 0
