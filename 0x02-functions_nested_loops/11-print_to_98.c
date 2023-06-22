@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
 * print_to_98 - prints numbers up to 98 depending on the first digit
+* @n: holds variable
 * Return: always 0
 */
 void print_to_98(int n)

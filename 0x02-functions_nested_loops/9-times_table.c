@@ -16,7 +16,7 @@ void times_table(void)
 			{
 				y = m % 10;
 				x = (m - y) / 10;
-				_putchar(42);
+				_putchar(44);
 				_putchar(32);
 				_putchar(x + '0');
 				_putchar(y + '0');
@@ -25,7 +25,7 @@ void times_table(void)
 			{
 				if (b != 0)
 				{
-					_putchar(42);
+					_putchar(44);
 					_putchar(32);
 					_putchar(32);
 				}
