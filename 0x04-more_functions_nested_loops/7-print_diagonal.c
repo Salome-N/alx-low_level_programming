@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
-* print_diagonal - print \diagonally by n times
+/**
+* print_diagonal - print diagonally by n times
 * @n: holds a value
 * Return: always 0
 */
@@ -18,11 +18,10 @@ void print_diagonal(int n)
 			{
 				_putchar(32);
 			}
-			
 			_putchar(92);
 			_putchar('\n');
 		}
 	}
 	else
-		_putchar('\n');	
+		_putchar('\n');
 }
