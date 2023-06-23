@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 * main - entry point
@@ -24,13 +25,14 @@ int main(void)
 			printf("Buzz");
 		}
 		else
+		{
 			printf("%d ", n);
+		}
 		if (n != 100)
 		{
 			printf(" ");
 		}
 	}
-
 	printf("\n");
 	return (0);
 }
