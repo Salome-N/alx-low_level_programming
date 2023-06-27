@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 {
 	int l;
 
-	for (l = 0; l <= n; l++)
+	for (l = 0; l < n; l++)
 	{
 		if (a[l] == 0)
 		{
