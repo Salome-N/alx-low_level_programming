@@ -3,7 +3,7 @@
 /**
 * string_toupper - change the alphabet to uppercase
 * @AtZ: holds string value
-* Return: always 0
+* Return: always AtZ
 */
 
 char *string_toupper(char *AtZ)
@@ -20,4 +20,6 @@ char *string_toupper(char *AtZ)
 		}
 		l++;
 	}
+
+	return (AtZ);
 }
