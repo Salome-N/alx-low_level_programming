@@ -9,7 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	int sum, a, b, c;
+	int  c;
+	unsigned int sum, b;
 	char *n;
 
 	sum = 0;
