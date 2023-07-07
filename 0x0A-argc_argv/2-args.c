@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - print the name of file
+* main - prints arguments each on new line
 * @argc: argument count
 * @argv: argument vector
 * Return: always 0
@@ -10,8 +10,12 @@
 int main(int argc, char *argv[])
 {
 	(void)argv;
+	int c;
 
-	printf("%s\n", argv[0]);
+	for (c = 0; c < argc; c++)
+	{
+		printf("%s\n", argv[c]);
+	}
 
 	return (0);
 }
