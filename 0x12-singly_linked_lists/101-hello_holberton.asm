@@ -1,3 +1,8 @@
+/**
+* 64-bit program in assembly that prints Hello, Holberton, followed by a new line
+* @var: format of what to be printed
+* txt: message to be printed
+*/
 	extern printf
 
 	global text
