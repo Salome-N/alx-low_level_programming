@@ -4,7 +4,7 @@ size_t loop_listintln(listint_t *head);
 size_t free_listint_safe(listint_t **h);
 
 /**
-* loop_listintl - count unique nodes
+* loop_listintln - count unique nodes
 * @head: pointer to listint_t list head
 * Return: no. of unique nodes
 */
