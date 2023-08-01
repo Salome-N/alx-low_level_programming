@@ -1,5 +1,50 @@
 #include "lists.h"
 
+size_t loop_listintln(listint_t *head);
+size_t free_listint_safe(listint_t **h);
+
+/**
+* loop_listintl - count unique nodes
+* @head: pointer to listint_t list head
+* Return: no. of unique nodes
+*/
+
+size_t loop_listintln(listint_t *head)
+{
+	listint_t *s, *f;
+	size_t n = 1;
+
+	if (head == NULL || head->next == NULL)
+		return (0);
+
+	s = head->next;
+	f = head->next->next;
+
+	while (f)
+	{
+		if (s == f)
+		{
+			s = head;
+			while (s != f)
+			{
+				n++;
+				s = s->next;
+				f = f->next;
+			}
+			s = s->next;
+			while (s != f)
+			{
+				n++;
+				s = s->next;
+			}
+			return (n);
+		}
+		s = s->next;
+		f = f->next->next;
+	}
+	return (0);
+}
+
 /**
 * free_listint_safe - free listint_t list safely
 * @h: pointer to listint_t list head
@@ -9,32 +54,30 @@
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *temp;
-	size_t l = 0;
-	int d;
+	size_t n, i;
 
-	if (!h || !*h)
-		return (0);
+	n = loop_listintln(*h);
 
-	while (*h)
+	if (n == 0)
 	{
-		d = *h - (*h)->next;
-		if (d > 0)
+		for (; h != NULL && *h != NULL; n++)
 		{
 			temp = (*h)->next;
+			free(*h);
 			*h = temp;
-			l++;
-		}
-
-		else
-		{
-			*h = NULL;
-			l++;
-			break;
 		}
 	}
+	else
+	{
+		for (i = 0; i < n; i++)
+		{
+			temp = (*h)->next;
+			free(*h);
+			*h = temp;
+		}
+		*h = NULL;
+	}
+	h = NULL;
 
-	*h = NULL;
-
-	return (l);
-
+	return (n);
 }
