@@ -12,8 +12,8 @@ size_t free_listint_safe(listint_t **h)
 	size_t l = 0;
 	int d;
 
-	if (h == NULL || *h == NULL)
-		return (NULL);
+	if (!h || !*h)
+		return (0);
 
 	while (*h)
 	{
