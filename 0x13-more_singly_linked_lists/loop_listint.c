@@ -11,7 +11,7 @@ size_t loop_listintl(const listint_t *head)
 	const listint_t *s, *f;
 	size_t n = 1;
 
-	if (head -- NULL || head->next == NULL)
+	if (head == NULL || head->next == NULL)
 		return (0);
 
 	s = head->next;
