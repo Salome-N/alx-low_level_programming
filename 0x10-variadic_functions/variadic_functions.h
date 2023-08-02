@@ -5,6 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct printall
+{
+	char *type;
+	void (*p)(va_list arg);
+}printall_t;
+
 int sum_them_all(const unsigned int n, ...);
 
 void print_numbers(const char *separator, const unsigned int n, ...);
