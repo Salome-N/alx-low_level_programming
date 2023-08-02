@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int strl(char *str);
 char *strc(char *d, char *s);
