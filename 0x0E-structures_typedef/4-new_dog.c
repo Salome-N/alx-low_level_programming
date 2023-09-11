@@ -29,10 +29,10 @@ int strl(char *s)
 
 char *strc(char *d, char *s)
 {
-	int i = 0
+	int i = 0;
 
 	for (i = 0; s[i]; i++)
-		d[i] = s[i]
+		d[i] = s[i];
 
 	d[i] = '\0';
 
@@ -49,7 +49,7 @@ char *strc(char *d, char *s)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t d;
+	dog_t *d;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
