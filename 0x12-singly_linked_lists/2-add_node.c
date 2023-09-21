@@ -9,29 +9,29 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	char *copy;
+	char *c;
 	int l;
-	list_t *node;
+	list_t *n;
 
-	node = malloc(sizeof(list_t));
-	if (node == NULL)
+	n = malloc(sizeof(list_t));
+	if (n == NULL)
 		return (NULL);
 
-	copy = strdup(str);
-	if (copy == NULL)
+	c = strdup(str);
+	if (c == NULL)
 	{
-		free(node);
+		free(n);
 		return (NULL);
 	}
 
 	for (l = 0; str[l]; l++)
 		l++;
 
-	node->str = copy;
-	node->len = l;
-	node->next = *head;
+	n->str = c;
+	n->len = l;
+	n->next = *head;
 
-	*head = node;
+	*head = n;
 
-	return (node);
+	return (n);
 }
