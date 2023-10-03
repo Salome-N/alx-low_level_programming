@@ -68,8 +68,7 @@ int main(int argc, char *argv[])
 	do {
 		if (s == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO, "Error:"
-				"Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(b);
 			exit(98);
 		}
@@ -77,8 +76,7 @@ int main(int argc, char *argv[])
 		w = write(d, b, r);
 		if (d == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO, "Error:"
-				"Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(b);
 			exit(99);
 		}
