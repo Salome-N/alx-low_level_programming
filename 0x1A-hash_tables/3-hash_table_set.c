@@ -5,7 +5,7 @@
 * @ht: hash table you want to add or update
 * @key:  the key you want to add or update
 * @value:  value associated with the key
-* Returns: 1 if it succeeded, 0 otherwise
+* Return: 1 if it succeeded, 0 otherwise
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	new = malloc(sizeof(hash_node_t));
-	if(new == NULL)
+	if (new == NULL)
 	{
 		free(value_cp);
 		return (0);
